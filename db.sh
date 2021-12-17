@@ -5,6 +5,6 @@ db_set(){
 }
 
 db_get(){
-    grep "^$1," database | sed =e "s/^$1,//" | tail -n 1
+    grep "^$1," database | sed -e "s/^$1,//" | tail -n 1
 }
 
